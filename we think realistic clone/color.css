@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root{
+    --color1: 243, 199, 124;
+    --color2: 0, 0, 0;
+    --color3: 69, 56, 49;
+    --color4: 207, 216, 215;
+    --color5: 243, 243, 235;
+}

@@ -1,0 +1,302 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+body{
+    background-color: rgb(var(--color2));
+    font-family: Helvetica, Arial, sans-serif; 
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Navbar style */
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    background-color: rgb(var(--color2),0.8);
+    padding: 1rem 3rem;
+}
+
+.navbar-brand{
+    --bs-navbar-brand-hover-color: rgb(var(--color2));
+    background-color: rgb(var(--color1));
+    color: rgb(var(--color5));
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.nav-link{
+    --bs-nav-link-hover-color: rgb(var(--color4));
+    font-size: 2rem;
+    color: rgb(var(--color1));
+}
+
+
+/* Namaste Section style */
+.namaste-sec{
+    width: 100%;
+    height: 100vh;
+    color: rgb(var(--color1));
+    display: grid;
+    place-items: center;
+}
+
+.namaste-sec h2{
+    margin-top: 12rem;
+    font-size: 30rem;
+    font-weight: bolder;
+}
+
+.namaste-sec p{
+    font-size: 5rem;
+}
+
+/* Video Section style */
+.video-sec{
+    min-height: 100vh;
+}
+
+/* Text Section style */
+.text-sec{
+    min-height: 100vh;
+    padding: 15rem 7rem;
+    font-size: 15rem;
+    line-height: 1.1;
+    color: rgb(var(--color1));
+}
+
+.line{
+    overflow: hidden;
+}
+
+.last-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.side-quote{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.7rem;
+    width: 37rem;
+    margin-bottom: 2.2rem;
+}
+
+/* Icon Section style here */
+.icon{
+    width: 100%;
+}
+
+.icon-sec .icon-row{
+    height: 80rem;
+}
+
+.wrap{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.icon-img{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 6/4;
+    background: url("https://t4.ftcdn.net/jpg/05/98/98/91/360_F_598989194_GSVTNjGeyh8nAuvugVHeQaLG3CEbqIXj.jpg");
+    background-size: 130% 130%;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 8;
+}
+
+.icon-img-2{
+    background: url("img or video/icon 1.jpg");
+    background-size: 130% 130%;
+    background-position: center;
+}
+
+.icon-img-3{
+    background: url("img or video/icon2.jpg");
+    background-size: 130% 130%;
+    background-position: center;
+}
+
+.icon-img-4{
+    background: url("img or video/icon 3.jpg");
+    background-size: 130% 130%;
+    background-position: center;
+}
+
+.icon-img-5{
+    background: url("img or video/icon 4.jpg");
+    background-size: 130% 130%;
+    background-position: center;
+}
+
+.icon-img .front-img{
+    width: 65%;
+    aspect-ratio: 7/4;
+}
+
+.wrap:hover{
+    padding: 2rem;
+    padding-bottom: 0;
+    transition: all 0.5s ease;
+}
+
+
+.wrap:hover .icon-img{
+    transition: all 0.5s ease;
+    background-size: 140% 140%;
+}
+
+.wrap:hover .front-img{
+    transition: all 0.5s ease;
+    width: 70%;
+}
+
+.icon h3, .icon p{
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    color: rgb(var(--color5));
+}
+
+.text-icon{
+    margin-top: -10rem;
+    max-height: 120%;
+}
+
+.spin-text-row{
+    height: 35%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spin-text-row video, .spin-text-row source{
+     width: 40rem;
+     mix-blend-mode: difference;
+     filter: brightness(200%);
+}
+
+.spin-text-row svg{
+    position: absolute;
+}
+
+
+/* --Hover text style-- */
+.hover-txt{
+    position: relative;
+    height: 44rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hover-txt .wrap-txt{
+    position: relative;
+    width: 40rem;
+    height: 13rem;
+    display: grid;
+    place-items: center;
+}
+
+.hover-txt .wrap-txt .border{
+    position: absolute;
+    top: -0rem;
+    left: -0rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1rem solid rgb(var(--color1));
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    
+}
+
+.hover-txt .wrap-txt:hover .border{
+     transform: scale(1.1) scaleY(1.3) rotate(-10deg);
+
+}
+
+.hover-txt .wrap-txt h2{
+    font-size: 3rem;
+    border: none;
+    color: rgb(var(--color1));
+}
+
+/* Srollable Text style */
+
+.container-text{
+    background-color: rgb(var(--color4));
+}
+.scroll-txt{
+    position: relative;
+    color: rgb(var(--color2));
+    min-height: 120vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    padding-top: 5rem;
+    line-height: 1;
+    font-size: 70rem;
+    font-weight: bolder;
+}
+
+
+
+/* basic info style */
+.basic-info{
+    padding: 15rem 10rem;
+}
+
+.basic-info h2{
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.basic-info p{
+    font-size: 2rem;
+    line-height: 1;
+}
+
+/* text & video style */
+.txt-vdo{
+    height: 100vh;
+    padding: 8rem;
+    background-color: rgb(var(--color1));
+}
+
+.txt-vdo div{
+    overflow: hidden;
+    font-size: 6rem;
+    text-align: center;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* footer style */
+footer{
+    background-color: rgb(var(--color2));
+    padding: 5rem 7rem;
+    font-size: 8rem;
+    font-weight: bolder;
+    color: rgb(var(--color3));
+}
